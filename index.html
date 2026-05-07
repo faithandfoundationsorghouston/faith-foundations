@@ -8,7 +8,7 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    :root 
+    :root  {
       --gold: #C9973A;
       --gold-light: #F0D9A8;
       --cream: #FDF8F0;
@@ -46,6 +46,16 @@
       position: relative;
       overflow: hidden;
     }
+        .hero::before {
+                content: '✝';
+                position: absolute;
+                font-size: 320px;
+                color: rgba(255,255,255,0.04);
+                top: -60px;
+                left: 50%;
+                transform: translateX(-50%);
+                pointer-events: none;
+        }
     .hero .badge {
       display: inline-block;
       background-color: var(--gold);
